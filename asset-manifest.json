@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/quickcell/static/css/main.0e98a2c8.css",
+    "main.js": "/quickcell/static/js/main.10c84039.js",
+    "static/js/453.5b42d496.chunk.js": "/quickcell/static/js/453.5b42d496.chunk.js",
+    "static/media/inp.png": "/quickcell/static/media/inp.fdd17e70c90909e81639.png",
+    "static/media/logo.svg": "/quickcell/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/quickcell/index.html",
+    "main.0e98a2c8.css.map": "/quickcell/static/css/main.0e98a2c8.css.map",
+    "main.10c84039.js.map": "/quickcell/static/js/main.10c84039.js.map",
+    "453.5b42d496.chunk.js.map": "/quickcell/static/js/453.5b42d496.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e98a2c8.css",
+    "static/js/main.10c84039.js"
+  ]
+}
