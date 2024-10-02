@@ -1,0 +1,116 @@
+
+
+/* src/styles/kanban.css */
+.kanban-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.kanban-column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.kanban-column h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ececec;
+}
+
+.kanban-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item-count {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.extra-icons {
+    margin-left: auto;
+    font-size: 0.85rem;
+    color: #888;
+
+}
+
+.status-icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+.status-icon.todo {
+    background-color: #aca7a7;
+}
+
+.status-icon.in_progress {
+    background-color: #f39c12;
+}
+
+.status-icon.backlog {
+    background-color: #8e44ad;
+}
+
+/* Specific styles for the status icons */
+.kanban-column .status-icon {
+    display: inline-block;
+    width: 8px;
+    /* Adjust size as needed */
+    height: 8px;
+    /* Adjust size as needed */
+    margin-left: 5px;
+}
+
+/* User icons - each user can have different colors in TicketCard.css */
+.user-initials {
+    background-color: #3498db;
+    /* Default color, can adjust based on user */
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .kanban-board {
+        flex-direction: column;
+        /* Stack columns on top of each other */
+        align-items: center;
+        /* Center columns */
+    }
+
+    .kanban-column {
+        min-width: 100%;
+        /* Full width on small screens */
+        max-width: 100%;
+    }
+}
